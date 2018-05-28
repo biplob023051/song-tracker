@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "some": "\"./node_modules/some/some.sh\"",
+    "some2": ".\\node_modules\\some\\some.sh && ..\\another.sh slashed/arg",
+    "start1": ".\\node_modules\\nodemon\\bin\\nodemon.js src\\app.js --exec 'npm run lint && node'",
+    "lint1": ".\\node_modules\\.bin\\eslint **\\*.js",
+    "start2": "nodemon app.js --watch --exec 'npm run lint && node src/app.js'",
+    "start": "npm run lint && nodemon --watch",
+    "lint": ".\\node_modules\\.bin\\eslint **\\*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "eslint": "^4.19.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
