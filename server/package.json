@@ -16,12 +16,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "eslint": "^4.19.1",
     "express": "^4.16.3",
+    "joi": "^13.3.0",
+    "jsonwebtoken": "^8.2.2",
     "morgan": "^1.9.0",
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "sequelize": "^4.37.10",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "eslint-config-standard": "^11.0.0",
